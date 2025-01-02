@@ -24,3 +24,21 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Copy and configure your `.env`
+```bash
+cp .env.sample .env
+```
+and update the correct values from [API Keys](https://maas.apps.prod.rhoai.rh-aiservices-bu.com/admin/applications) and [API Endpoints](https://maas.apps.prod.rhoai.rh-aiservices-bu.com/docs)
+
+
+## Usage
+Show Help
+```bash
+python prompt.py -h
+```
+
+Run a Prompt
+```bash
+python prompt.py "This is the best machine learning prompt ever written" 
+```
